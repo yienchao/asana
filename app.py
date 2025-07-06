@@ -13,3 +13,7 @@ def webhook():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/')
+def index():
+    return "Flask app is running on Render!"
